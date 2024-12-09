@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityDashboard"
+    android:background="@drawable/fondo2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            tools:ignore="WebViewLayout">
+
+            <ImageView
+                android:layout_width="400px"
+                android:layout_height="400px"
+                android:layout_gravity="center"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10px"
+                android:layout_marginTop="50px"
+                android:textAlignment="center"
+                android:text="Bienvenido a la app de fichas de"
+                android:textSize="60px"
+                android:fontFamily="@font/font"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Call of Cthulhu"
+                android:textSize="120px"
+                android:fontFamily="@font/font"/>
+
+            <Button
+                android:id="@+id/btn_rules"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:text="Reglas básicas del juego"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:text="Sobre Call of Cthulhu"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_character"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mis personajes"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Opciones"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:textColor="@color/white" />
+
+            <WebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="550px"
+                android:layout_marginTop="60px"
+                android:padding="10px"
+                android:layout_gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="200px"
+                />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre: Javiera Villarreal"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" | Programación Android, 2024"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

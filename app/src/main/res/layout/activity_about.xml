@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityAbout"
+    android:background="@drawable/fondo2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textAlignment="center"
+                android:text="Sobre Call of Cthulhu"
+                android:textSize="90px"
+                android:fontFamily="@font/font"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="La llamada de Cthulhu es un juego de rol lleno de secretos, misterios y horror basado en la obra de H. P. Lovecraft."
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:justificationMode="inter_word" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_gravity="center"
+                android:src="@drawable/lovecraft"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Interpretando el papel de un resuelto investigador, viajarás a lugares extraños y peligrosos, desenmascararás conspiraciones malignas y te enfrentarás a los terrores de la noche. Te toparás con entidades que desafí­an la cordura, monstruos y sectarios dementes. Entre extraños y olvidados tomos de conocimiento encontrarás secretos que el hombre no deberí­a conocer. Es muy probable que tus compañeros y tú decidáis el destino del mundo."
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:justificationMode="inter_word" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="El Manual del Guardián contiene las reglas básicas, trasfondo, consejos, hechizos y monstruos del juego. Se trata de una herramienta exclusiva para el jugador que ejerce como Guardián, el encargado de plantear la aventura al resto de los jugadores. Para poder jugar a La llamada de Cthulhu es necesario disponer como mí­nimo de un ejemplar de este libro. Los demás jugadores, que interpretarán a los investigadores, deberí­an tener una o varias copias del Guí­a del investigador, en el que se ofrecen reglas adicionales para la creación de personajes, habilidades, ocupaciones, equipo y mucho más."
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:justificationMode="inter_word"/>
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:text="Volver"
+                android:textColor="@color/white"
+                android:layout_marginTop="50px"
+                android:layout_marginBottom="150px"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

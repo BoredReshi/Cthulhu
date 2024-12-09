@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Estilo para los TextViews -->
+    <style name="TableTextStyle">
+        <item name="android:textColor">#704214</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/font</item>
+        <item name="android:textColorHint">#8C5B2A</item>
+
+    </style>
+
+    <!-- Estilo para los encabezados -->
+    <style name="HeaderTextStyle">
+        <item name="android:textColor">#704214</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/font</item>
+    </style>
+
+</resources>

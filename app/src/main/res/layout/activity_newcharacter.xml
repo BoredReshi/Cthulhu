@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0C9A6"
+    tools:context=".ActivityDashboard"
+    tools:ignore="ExtraText">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:text="Nuevo personaje"
+                android:textColor="#704214"
+                android:textSize="120px"
+                android:fontFamily="@font/font"/>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="300dp"
+                android:layout_height="350dp"
+                android:scaleType="centerCrop"
+                android:background="@color/cardview_dark_background"
+                android:contentDescription="Vista previa de la imagen" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="16dp">
+
+                <Button
+                    android:id="@+id/btn_selectimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seleccionar Imagen"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="#704214"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btn_removeimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Borrar Imagen"
+                    android:backgroundTint="#704214"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="35dp"
+                android:text="Datos basicos"
+                style="@style/TableTextStyle"
+                android:padding="16dp"/>
+
+            <EditText
+                android:id="@+id/name"
+                style="@style/TableTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/font"
+                android:hint="Nombre de personaje"
+                android:inputType="textPersonName"
+                android:textColor="#704214"
+                android:textSize="30dp"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/job"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:hint="Ocupacion"
+                android:textColor="#704214"
+                android:fontFamily="@font/font"
+                style="@style/TableTextStyle"
+                android:textSize="30dp"
+                android:inputType="textPersonName"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/ageNgender"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:hint="Edad y Genero"
+                style="@style/TableTextStyle"
+                android:fontFamily="@font/font"
+                android:textColor="#704214"
+                android:textSize="30dp"
+                android:inputType="textPersonName"
+                android:padding="10dp"/>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="16dp">
+
+                <EditText
+                    android:id="@+id/health"
+                    style="@style/TableTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/font"
+                    android:hint="Vida"
+                    android:inputType="textPersonName"
+                    android:textColor="#704214"
+                    android:textSize="30dp" />
+
+                <EditText
+                    android:id="@+id/magic"
+                    style="@style/TableTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/font"
+                    android:hint="Magia"
+                    android:inputType="textPersonName"
+                    android:textColor="#704214"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="16dp">
+
+                <EditText
+                    android:id="@+id/sanity"
+                    style="@style/TableTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/font"
+                    android:hint="Cordura"
+                    android:inputType="textPersonName"
+                    android:textColor="#704214"
+                    android:textSize="30dp" />
+
+                <EditText
+                    android:id="@+id/luck"
+                    style="@style/TableTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/font"
+                    android:hint="Suerte"
+                    android:inputType="textPersonName"
+                    android:textColor="#704214"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="35dp"
+                android:text="Inventario"
+                style="@style/TableTextStyle"
+                android:padding="16dp"/>
+
+            <EditText
+                android:id="@+id/textAreaInventory"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:hint="Escribe aquí..."
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:minLines="5"
+                android:maxLines="20"
+                android:scrollbars="vertical"
+                android:background="@android:drawable/editbox_background_normal"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/btn_stats"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Características"
+                android:padding="10dp"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:textColor="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="40dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:text="Guardar"
+                    android:backgroundTint="#704214"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btn_delete"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:text="Eliminar"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="#800000"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

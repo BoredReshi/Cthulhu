@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityDashboard"
+    android:background="@drawable/fondo2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            tools:ignore="WebViewLayout">
+
+            <Button
+                android:id="@+id/btn_users"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:text="Usuarios"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/btn_notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:text="Anotaciones"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/btn_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mi cuenta"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Volver"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
